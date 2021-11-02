@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>momentum</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Fontawesome cdn -->
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<!-- CSS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="momentum.css">	
+<!-- JS -->
+		<script type="text/javascript" src="momentum.js"></script>
+	</head>
+	<body>
+		<!-- 로그인 폼 -->
+		<form id="login-form" class="hidden">
+			<input required maxlength="15" type="text" placeholder="what is your name?">
+			<button class="hidden">Login</button>
+		</form>
+		<!-- 인사말 -->
+		<h2 id="greeting" class="hidden"></h2>
+		<!-- 투두 -->
+		<form id="todo-form" class="hidden">
+			<input required type="text" placeholder="할 일을 입력하세요.">
+		</form>
+		<ul id="todo-list" class="hidden"></ul>
+		<!-- 시간 -->
+		<h1 id="clock">00:00:00</h1>
+		<!-- 랜덤 명언 -->
+		<div id="quote">
+			<p></p>
+			<p></p>
+		</div>
+		<!-- 날씨 -->
+		<div id="weather">
+			<span></span>
+			<span></span>
+		</div>
+	</body>
+</html>

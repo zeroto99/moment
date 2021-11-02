@@ -1,0 +1,156 @@
+/* web fonts - noonnu */
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Default CSS  */
+body {
+	overflow: hidden;
+	color: #fff;
+	font-family: 'Pretendard-Regular';
+}
+ul {
+	list-style: none;
+}
+
+/* Common CSS */
+.hidden {
+	display: none;
+}
+
+/************ 로그인 ************/
+#login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#login-form > input {
+	border: none;
+    background-color: transparent;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+#login-form > input:focus {
+	outline: none;
+	border-bottom: 1px solid;
+}
+#login-form > input::placeholder {
+	color: white;
+}
+#login-form > input:focus::placeholder {
+	color: #ffffff70;
+}
+
+/************ 인사말 ************/
+#greeting {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/************ 투두 ************/
+#todo-form {
+	position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#todo-form > input {
+	border: none;
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 11px;
+    background-color: #e5e6e666;
+    line-height: 50px;
+    color: #2e2e2e;
+    font-size: 16px;
+}
+#todo-form > input::placeholder {
+	color: #000;
+	font-size: 16px;
+}
+#todo-form > input:focus {
+	outline: none;
+    box-shadow: 2px 5px 12px 0px #49494959;
+}
+#todo-form > input:focus::placeholder {
+	color: #ffffff70;
+}
+/* 투두 리스트 */
+#todo-list {
+	position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+#todo-list > li {
+	border-bottom: 1px solid;
+	padding: 15px;
+}
+#todo-list > li > span {
+	margin-right: 20px;
+	letter-spacing: 1px;
+	display: inline-block;
+    width: 400px;
+}
+#todo-list > li > button {
+	width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+/************ 시간 ************/
+#clock {
+	position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/************ 명언 ************/
+#quote {
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#quote p {
+	text-align: center;
+}
+
+/************ 날씨 ************/
+#weather {
+	position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+/************ 배경이미지 ************/
+img {
+	width: 100%;
+	height: 100%;
+}
